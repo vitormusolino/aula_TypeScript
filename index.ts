@@ -47,7 +47,7 @@ function exibirProduto(produto: Produto): string {
     style: "currency",
     currency: "BRL",
   });
-  const status = produto.emEstoque ? "✅ disponível" : "❌ indisponível";
+  const status = produto.emEstoque ? "✅ Disponível" : "❌ Indisponível";
   return `[${produto.categoria}] ${produto.nome} - ${precoFormatado} ${status}`;
 }
 console.log("=== Catálogo de Produtos ===\n");
